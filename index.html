@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TankLux - Mobile Tankstelle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f6f3;
+      color: #333;
+    }
+    header {
+      background: #F9F5EE;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 60px;
+    }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 3rem;
+      background: linear-gradient(to bottom, #f3efe7, #ffffff);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #2d2d2d;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero button {
+      background-color: #a3792e;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #8b6a27;
+    }
+    .info-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .info-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .info-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .feature {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      max-width: 280px;
+      text-align: center;
+    }
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      color: #a3792e;
+    }
+    .extra-section {
+      background: #ffffff;
+      padding: 4rem 2rem;
+    }
+    .extra-section h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .step {
+      background: #f3efe7;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .step h3 {
+      margin-bottom: 0.5rem;
+      color: #a3792e;
+    }
+    .booking-section {
+      max-width: 600px;
+      margin: 5rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .booking-section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .booking-section label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+    .booking-section input, .booking-section select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .booking-section button {
+      width: 100%;
+      margin-top: 2rem;
+      background-color: #a3792e;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="tanklux_logo.png" alt="TankLux Logo">
+  </header>
+
+  <section class="hero">
+    <h1>Ihr Tank kommt zu Ihnen.</h1>
+    <p>TankLux ist der erste mobile Tankservice für Menschen mit Stil – wir bringen den Kraftstoff direkt zu Ihrer Einfahrt. Komfort, Luxus und Effizienz in einem Service.</p>
+    <button onclick="document.getElementById('info').scrollIntoView({ behavior: 'smooth' })">Mehr erfahren</button>
+  </section>
+
+  <section class="info-section" id="info">
+    <h2>Warum TankLux?</h2>
+    <p>Wir sparen Ihnen Zeit, Aufwand und Nerven – kein Umweg mehr zur Tankstelle, kein Warten, kein Stress. Einfach, exklusiv, effizient.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>Luxus & Komfort</h3>
+        <p>Unser Service ist speziell für anspruchsvolle Kunden entwickelt, die Komfort lieben.</p>
+      </div>
+      <div class="feature">
+        <h3>Notfallbetankung</h3>
+        <p>Kein Benzin mehr? Wir kommen zu Ihnen – egal ob zu Hause oder unterwegs.</p>
+      </div>
+      <div class="feature">
+        <h3>Flexible Buchung</h3>
+        <p>Buchen Sie online oder per App – in nur wenigen Klicks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra-section">
+    <h2>Wie funktioniert TankLux?</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Standort angeben</h3>
+        <p>Teilen Sie uns mit, wo Ihr Fahrzeug steht. Ob zuhause oder am Arbeitsplatz – wir finden Sie.</p>
+      </div>
+      <div class="step">
+        <h3>2. Kraftstoff wählen</h3>
+        <p>Wählen Sie Ihre gewünschte Kraftstoffart – ob Benzin, Diesel oder Super Plus.</p>
+      </div>
+      <div class="step">
+        <h3>3. Termin festlegen</h3>
+        <p>Sie bestimmen, wann wir kommen. Wir richten uns nach Ihrem Alltag.</p>
+      </div>
+      <div class="step">
+        <h3>4. Vor-Ort-Service</h3>
+        <p>Unser geschultes Personal führt den Tankvorgang sicher und sauber durch – direkt bei Ihnen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <h2>Buchung</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Ihr Name">
+
+      <label for="adresse">Adresse</label>
+      <input type="text" id="adresse" placeholder="Straße, Nr, PLZ, Ort">
+
+      <label for="fahrzeug">Fahrzeugtyp</label>
+      <input type="text" id="fahrzeug" placeholder="z.B. BMW M5 CS">
+
+      <label for="kraftstoff">Kraftstoffart</label>
+      <select id="kraftstoff">
+        <option>Benzin</option>
+        <option>Diesel</option>
+        <option>Super Plus</option>
+      </select>
+
+      <label for="zeit">Gewünschte Uhrzeit</label>
+      <input type="time" id="zeit">
+
+      <button type="submit">Buchung absenden</button>
+    </form>
+    <div style="margin-top:2rem; text-align:center; font-size:0.95rem; color:#555; background:#f3efe7; padding:1rem; border-radius:8px;">
+      <strong>Hinweis:</strong><br>
+      Nach dem Absenden Ihrer Anfrage erhalten Sie eine automatische Bestätigung per E-Mail.<br>
+      Der endgültige Termin wird persönlich mit Ihnen per Mail vereinbart.
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TankLux. Alle Rechte vorbehalten.
+  </footer>
+</body>
+</html>
